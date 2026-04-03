@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AyoCloudi – Official website for Ayomide Ogun-Ajala. Music, merch, tour dates, and more." />
+  <meta name="keywords" content="AyoCloudi, Ayomide Ogun-Ajala, music, merch, tour, artist" />
+  <meta name="author" content="AyoCloudi" />
+  <meta property="og:title" content="AyoCloudi – Music &amp; Merch" />
+  <meta property="og:description" content="Official website for AyoCloudi. Stream music, shop merch, and catch live shows." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ayocloudi.com" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AyoCloudi – Music &amp; Merch" />
+  <meta name="twitter:description" content="Official website for AyoCloudi. Stream music, shop merch, and catch live shows." />
+  <title>AyoCloudi – Music &amp; Merch</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">AyoCloudi</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#music" class="nav-link">Music</a></li>
+        <li><a href="#merch" class="nav-link">Merch</a></li>
+        <li><a href="#tour" class="nav-link">Tour</a></li>
+        <li><a href="#news" class="nav-link">News</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-orb hero-orb-3"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge reveal">NEW SINGLE OUT NOW</div>
+      <h1 class="hero-title reveal">
+        <span class="hero-title-main">AyoCloudi</span>
+        <span class="hero-title-sub">Music &amp; Merch</span>
+      </h1>
+      <p class="hero-tagline reveal">Ayomide Ogun-Ajala &mdash; Genre-defying sound, unapologetic energy.</p>
+      <div class="hero-actions reveal">
+        <a href="#music" class="btn btn-primary">
+          <i class="fas fa-play"></i> Listen Now
+        </a>
+        <a href="#merch" class="btn btn-outline">Shop Merch</a>
+      </div>
+
+      <!-- Mini Player -->
+      <div class="mini-player reveal" id="miniPlayer">
+        <div class="mini-player-artwork">
+          <div class="mini-player-artwork-inner">
+            <i class="fas fa-music"></i>
+          </div>
+        </div>
+        <div class="mini-player-info">
+          <span class="mini-player-track">Latest Track</span>
+          <span class="mini-player-artist">AyoCloudi</span>
+        </div>
+        <div class="mini-player-controls">
+          <button class="player-btn" id="prevBtn" aria-label="Previous track">
+            <i class="fas fa-backward-step"></i>
+          </button>
+          <button class="player-btn player-btn-main" id="playPauseBtn" aria-label="Play or pause">
+            <i class="fas fa-play" id="playIcon"></i>
+          </button>
+          <button class="player-btn" id="nextBtn" aria-label="Next track">
+            <i class="fas fa-forward-step"></i>
+          </button>
+        </div>
+        <div class="mini-player-progress">
+          <div class="progress-bar" id="progressBar">
+            <div class="progress-fill" id="progressFill"></div>
+          </div>
+          <span class="progress-time" id="progressTime">0:00</span>
+        </div>
+        <div class="mini-player-volume">
+          <i class="fas fa-volume-high"></i>
+          <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="80" aria-label="Volume" />
+        </div>
+      </div>
+
+      <!-- Spotify Embed -->
+      <div class="spotify-embed reveal">
+        <p class="spotify-label"><i class="fab fa-spotify"></i> Stream on Spotify</p>
+        <iframe
+          style="border-radius:12px"
+          src="https://open.spotify.com/embed/artist/6eUKZXaKkcviH0Ku9w2n3V?utm_source=generator&theme=0"
+          width="100%"
+          height="152"
+          frameBorder="0"
+          allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+          title="AyoCloudi on Spotify"
+        ></iframe>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== MUSIC SECTION ===== -->
+  <section class="section" id="music">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow reveal">Discography</span>
+        <h2 class="section-title reveal">Latest Music</h2>
+        <p class="section-desc reveal">Stream, download, and vibe — available on all major platforms.</p>
+      </div>
+
+      <div class="music-grid">
+        <!-- Release 1 -->
+        <article class="music-card reveal" data-track="0">
+          <div class="music-card-artwork">
+            <div class="artwork-placeholder artwork-1"></div>
+            <div class="music-card-overlay">
+              <button class="artwork-play-btn" data-track="0" aria-label="Preview track 1">
+                <i class="fas fa-play"></i>
+              </button>
+            </div>
+            <span class="release-badge">Single</span>
+          </div>
+          <div class="music-card-info">
+            <h3 class="music-card-title">Cloud Nine</h3>
+            <p class="music-card-meta">2024 &bull; AyoCloudi</p>
+            <p class="music-card-desc">A dreamy, bass-heavy single that blurs the lines between Afrobeats and alternative R&B.</p>
+            <div class="music-card-links">
+              <a href="https://open.spotify.com/artist/6eUKZXaKkcviH0Ku9w2n3V" target="_blank" rel="noopener noreferrer" class="stream-btn spotify-btn" aria-label="Listen on Spotify">
+                <i class="fab fa-spotify"></i> Spotify
+              </a>
+              <a href="https://music.apple.com" target="_blank" rel="noopener noreferrer" class="stream-btn apple-btn" aria-label="Listen on Apple Music">
+                <i class="fab fa-apple"></i> Apple
+              </a>
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="stream-btn yt-btn" aria-label="Watch on YouTube">
+                <i class="fab fa-youtube"></i> YouTube
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Release 2 -->
+        <article class="music-card reveal" data-track="1">
+          <div class="music-card-artwork">
+            <div class="artwork-placeholder artwork-2"></div>
+            <div class="music-card-overlay">
+              <button class="artwork-play-btn" data-track="1" aria-label="Preview track 2">
+                <i class="fas fa-play"></i>
+              </button>
+            </div>
+            <span class="release-badge">EP</span>
+          </div>
+          <div class="music-card-info">
+            <h3 class="music-card-title">Midnight Static</h3>
+            <p class="music-card-meta">2024 &bull; AyoCloudi</p>
+            <p class="music-card-desc">A 5-track EP exploring late-night emotions — raw, introspective, and sonically adventurous.</p>
+            <div class="music-card-links">
+              <a href="https://open.spotify.com/artist/6eUKZXaKkcviH0Ku9w2n3V" target="_blank" rel="noopener noreferrer" class="stream-btn spotify-btn" aria-label="Listen on Spotify">
+                <i class="fab fa-spotify"></i> Spotify
+              </a>
+              <a href="https://music.apple.com" target="_blank" rel="noopener noreferrer" class="stream-btn apple-btn" aria-label="Listen on Apple Music">
+                <i class="fab fa-apple"></i> Apple
+              </a>
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="stream-btn yt-btn" aria-label="Watch on YouTube">
+                <i class="fab fa-youtube"></i> YouTube
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Release 3 -->
+        <article class="music-card reveal" data-track="2">
+          <div class="music-card-artwork">
+            <div class="artwork-placeholder artwork-3"></div>
+            <div class="music-card-overlay">
+              <button class="artwork-play-btn" data-track="2" aria-label="Preview track 3">
+                <i class="fas fa-play"></i>
+              </button>
+            </div>
+            <span class="release-badge">Single</span>
+          </div>
+          <div class="music-card-info">
+            <h3 class="music-card-title">Neon Shadows</h3>
+            <p class="music-card-meta">2023 &bull; AyoCloudi</p>
+            <p class="music-card-desc">Dark, cinematic production with haunting vocals — a fan favourite from day one.</p>
+            <div class="music-card-links">
+              <a href="https://open.spotify.com/artist/6eUKZXaKkcviH0Ku9w2n3V" target="_blank" rel="noopener noreferrer" class="stream-btn spotify-btn" aria-label="Listen on Spotify">
+                <i class="fab fa-spotify"></i> Spotify
+              </a>
+              <a href="https://music.apple.com" target="_blank" rel="noopener noreferrer" class="stream-btn apple-btn" aria-label="Listen on Apple Music">
+                <i class="fab fa-apple"></i> Apple
+              </a>
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="stream-btn yt-btn" aria-label="Watch on YouTube">
+                <i class="fab fa-youtube"></i> YouTube
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Release 4 -->
+        <article class="music-card reveal" data-track="3">
+          <div class="music-card-artwork">
+            <div class="artwork-placeholder artwork-4"></div>
+            <div class="music-card-overlay">
+              <button class="artwork-play-btn" data-track="3" aria-label="Preview track 4">
+                <i class="fas fa-play"></i>
+              </button>
+            </div>
+            <span class="release-badge">Album</span>
+          </div>
+          <div class="music-card-info">
+            <h3 class="music-card-title">Cloud Archive Vol. 1</h3>
+            <p class="music-card-meta">2023 &bull; AyoCloudi</p>
+            <p class="music-card-desc">Debut album. 12 tracks of genre-bending artistry that put AyoCloudi on the map.</p>
+            <div class="music-card-links">
+              <a href="https://open.spotify.com/artist/6eUKZXaKkcviH0Ku9w2n3V" target="_blank" rel="noopener noreferrer" class="stream-btn spotify-btn" aria-label="Listen on Spotify">
+                <i class="fab fa-spotify"></i> Spotify
+              </a>
+              <a href="https://music.apple.com" target="_blank" rel="noopener noreferrer" class="stream-btn apple-btn" aria-label="Listen on Apple Music">
+                <i class="fab fa-apple"></i> Apple
+              </a>
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="stream-btn yt-btn" aria-label="Watch on YouTube">
+                <i class="fab fa-youtube"></i> YouTube
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Audio Preview Player -->
+      <div class="audio-preview-player" id="audioPreview">
+        <div class="audio-preview-inner">
+          <div class="audio-preview-artwork">
+            <div class="artwork-placeholder" id="previewArtwork"></div>
+          </div>
+          <div class="audio-preview-info">
+            <p class="audio-preview-label">NOW PREVIEWING</p>
+            <h4 class="audio-preview-title" id="previewTitle">Cloud Nine</h4>
+            <p class="audio-preview-artist">AyoCloudi</p>
+          </div>
+          <div class="audio-preview-controls">
+            <div class="audio-waveform">
+              <div class="waveform-bar" style="height:40%"></div>
+              <div class="waveform-bar" style="height:70%"></div>
+              <div class="waveform-bar" style="height:55%"></div>
+              <div class="waveform-bar" style="height:90%"></div>
+              <div class="waveform-bar" style="height:65%"></div>
+              <div class="waveform-bar" style="height:45%"></div>
+              <div class="waveform-bar" style="height:80%"></div>
+              <div class="waveform-bar" style="height:60%"></div>
+              <div class="waveform-bar" style="height:75%"></div>
+              <div class="waveform-bar" style="height:50%"></div>
+              <div class="waveform-bar" style="height:85%"></div>
+              <div class="waveform-bar" style="height:40%"></div>
+            </div>
+            <button class="preview-close-btn" id="previewClose" aria-label="Close preview">
+              <i class="fas fa-xmark"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MERCH SECTION ===== -->
+  <section class="section section-alt" id="merch">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow reveal">Official Store</span>
+        <h2 class="section-title reveal">Shop Merch</h2>
+        <p class="section-desc reveal">Wear the vibe. Limited drops, exclusive designs.</p>
+      </div>
+
+      <div class="merch-filter reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="clothing">Clothing</button>
+        <button class="filter-btn" data-filter="vinyl">Vinyl &amp; Music</button>
+        <button class="filter-btn" data-filter="digital">Digital</button>
+        <button class="filter-btn" data-filter="accessories">Accessories</button>
+      </div>
+
+      <div class="merch-grid" id="merchGrid">
+        <!-- Product 1 -->
+        <article class="merch-card reveal" data-category="clothing">
+          <div class="merch-card-image">
+            <div class="merch-placeholder merch-p1">
+              <i class="fas fa-shirt"></i>
+            </div>
+            <div class="merch-card-badge">NEW</div>
+            <button class="merch-wishlist" aria-label="Add to wishlist"><i class="fas fa-heart"></i></button>
+          </div>
+          <div class="merch-card-body">
+            <h3 class="merch-card-title">Cloud Nine Tee</h3>
+            <p class="merch-card-desc">Premium heavyweight cotton tee with neon cloud print.</p>
+            <div class="merch-card-footer">
+              <span class="merch-price">£28.00</span>
+              <button class="btn btn-buy">Buy Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 2 -->
+        <article class="merch-card reveal" data-category="clothing">
+          <div class="merch-card-image">
+            <div class="merch-placeholder merch-p2">
+              <i class="fas fa-shirt"></i>
+            </div>
+            <button class="merch-wishlist" aria-label="Add to wishlist"><i class="fas fa-heart"></i></button>
+          </div>
+          <div class="merch-card-body">
+            <h3 class="merch-card-title">Midnight Static Hoodie</h3>
+            <p class="merch-card-desc">Oversized pullover hoodie in washed black with embroidered logo.</p>
+            <div class="merch-card-footer">
+              <span class="merch-price">£55.00</span>
+              <button class="btn btn-buy">Buy Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="merch-card reveal" data-category="vinyl">
+          <div class="merch-card-image">
+            <div class="merch-placeholder merch-p3">
+              <i class="fas fa-record-vinyl"></i>
+            </div>
+            <div class="merch-card-badge">LIMITED</div>
+            <button class="merch-wishlist" aria-label="Add to wishlist"><i class="fas fa-heart"></i></button>
+          </div>
+          <div class="merch-card-body">
+            <h3 class="merch-card-title">Cloud Archive Vol. 1 — Vinyl</h3>
+            <p class="merch-card-desc">180g translucent purple vinyl. Includes digital download code.</p>
+            <div class="merch-card-footer">
+              <span class="merch-price">£35.00</span>
+              <button class="btn btn-buy">Buy Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 4 -->
+        <article class="merch-card reveal" data-category="digital">
+          <div class="merch-card-image">
+            <div class="merch-placeholder merch-p4">
+              <i class="fas fa-download"></i>
+            </div>
+            <button class="merch-wishlist" aria-label="Add to wishlist"><i class="fas fa-heart"></i></button>
+          </div>
+          <div class="merch-card-body">
+            <h3 class="merch-card-title">Midnight Static EP — Digital</h3>
+            <p class="merch-card-desc">High-quality FLAC download of the full EP + exclusive stems.</p>
+            <div class="merch-card-footer">
+              <span class="merch-price">£9.99</span>
+              <button class="btn btn-buy">Buy Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 5 -->
+        <article class="merch-card reveal" data-category="accessories">
+          <div class="merch-card-image">
+            <div class="merch-placeholder merch-p5">
+              <i class="fas fa-hat-wizard"></i>
+            </div>
+            <button class="merch-wishlist" aria-label="Add to wishlist"><i class="fas fa-heart"></i></button>
+          </div>
+          <div class="merch-card-body">
+            <h3 class="merch-card-title">AyoCloudi Beanie</h3>
+            <p class="merch-card-desc">Ribbed knit beanie with embroidered wordmark in neon green thread.</p>
+            <div class="merch-card-footer">
+              <span class="merch-price">£18.00</span>
+              <button class="btn btn-buy">Buy Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 6 -->
+        <article class="merch-card reveal" data-category="clothing">
+          <div class="merch-card-image">
+            <div class="merch-placeholder merch-p6">
+              <i class="fas fa-shirt"></i>
+            </div>
+            <div class="merch-card-badge">SOLD OUT</div>
+            <button class="merch-wishlist" aria-label="Add to wishlist"><i class="fas fa-heart"></i></button>
+          </div>
+          <div class="merch-card-body">
+            <h3 class="merch-card-title">Neon Shadows Long Sleeve</h3>
+            <p class="merch-card-desc">All-over neon shadows print long sleeve. Restock coming soon.</p>
+            <div class="merch-card-footer">
+              <span class="merch-price sold-out">£32.00</span>
+              <button class="btn btn-buy" disabled>Sold Out</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 7 -->
+        <article class="merch-card reveal" data-category="accessories">
+          <div class="merch-card-image">
+            <div class="merch-placeholder merch-p7">
+              <i class="fas fa-bag-shopping"></i>
+            </div>
+            <button class="merch-wishlist" aria-label="Add to wishlist"><i class="fas fa-heart"></i></button>
+          </div>
+          <div class="merch-card-body">
+            <h3 class="merch-card-title">Cloud Tote Bag</h3>
+            <p class="merch-card-desc">Heavy-duty canvas tote with AyoCloudi cloud graphic. 100% organic cotton.</p>
+            <div class="merch-card-footer">
+              <span class="merch-price">£22.00</span>
+              <button class="btn btn-buy">Buy Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 8 -->
+        <article class="merch-card reveal" data-category="vinyl">
+          <div class="merch-card-image">
+            <div class="merch-placeholder merch-p8">
+              <i class="fas fa-compact-disc"></i>
+            </div>
+            <button class="merch-wishlist" aria-label="Add to wishlist"><i class="fas fa-heart"></i></button>
+          </div>
+          <div class="merch-card-body">
+            <h3 class="merch-card-title">Cloud Nine — 7" Single</h3>
+            <p class="merch-card-desc">Picture disc 7" single. Collector's item with exclusive b-side.</p>
+            <div class="merch-card-footer">
+              <span class="merch-price">£16.00</span>
+              <button class="btn btn-buy">Buy Now</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="merch-cta reveal">
+        <p>More drops coming soon — <a href="#contact" class="link-accent">sign up for early access</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TOUR SECTION ===== -->
+  <section class="section" id="tour">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow reveal">Live</span>
+        <h2 class="section-title reveal">Tour Dates</h2>
+        <p class="section-desc reveal">Catch AyoCloudi live. Tickets sell fast — don't sleep on it.</p>
+      </div>
+
+      <div class="tour-list">
+        <div class="tour-item reveal">
+          <div class="tour-date">
+            <span class="tour-day">12</span>
+            <span class="tour-month">JUL</span>
+          </div>
+          <div class="tour-details">
+            <h3 class="tour-venue">Fabric London</h3>
+            <p class="tour-location"><i class="fas fa-location-dot"></i> London, UK</p>
+          </div>
+          <div class="tour-status">
+            <span class="ticket-avail">Tickets Available</span>
+            <a href="https://linktr.ee/ayocloudi" target="_blank" rel="noopener noreferrer" class="btn btn-tickets">Buy Tickets</a>
+          </div>
+        </div>
+
+        <div class="tour-item reveal">
+          <div class="tour-date">
+            <span class="tour-day">19</span>
+            <span class="tour-month">JUL</span>
+          </div>
+          <div class="tour-details">
+            <h3 class="tour-venue">Night &amp; Day Café</h3>
+            <p class="tour-location"><i class="fas fa-location-dot"></i> Manchester, UK</p>
+          </div>
+          <div class="tour-status">
+            <span class="ticket-avail">Tickets Available</span>
+            <a href="https://linktr.ee/ayocloudi" target="_blank" rel="noopener noreferrer" class="btn btn-tickets">Buy Tickets</a>
+          </div>
+        </div>
+
+        <div class="tour-item reveal">
+          <div class="tour-date">
+            <span class="tour-day">26</span>
+            <span class="tour-month">JUL</span>
+          </div>
+          <div class="tour-details">
+            <h3 class="tour-venue">Concorde 2</h3>
+            <p class="tour-location"><i class="fas fa-location-dot"></i> Brighton, UK</p>
+          </div>
+          <div class="tour-status">
+            <span class="ticket-avail ticket-few">Few Left</span>
+            <a href="https://linktr.ee/ayocloudi" target="_blank" rel="noopener noreferrer" class="btn btn-tickets">Buy Tickets</a>
+          </div>
+        </div>
+
+        <div class="tour-item reveal">
+          <div class="tour-date">
+            <span class="tour-day">09</span>
+            <span class="tour-month">AUG</span>
+          </div>
+          <div class="tour-details">
+            <h3 class="tour-venue">The Lemon Tree</h3>
+            <p class="tour-location"><i class="fas fa-location-dot"></i> Aberdeen, UK</p>
+          </div>
+          <div class="tour-status">
+            <span class="ticket-avail">Tickets Available</span>
+            <a href="https://linktr.ee/ayocloudi" target="_blank" rel="noopener noreferrer" class="btn btn-tickets">Buy Tickets</a>
+          </div>
+        </div>
+
+        <div class="tour-item reveal">
+          <div class="tour-date">
+            <span class="tour-day">23</span>
+            <span class="tour-month">AUG</span>
+          </div>
+          <div class="tour-details">
+            <h3 class="tour-venue">Omeara London</h3>
+            <p class="tour-location"><i class="fas fa-location-dot"></i> London, UK</p>
+          </div>
+          <div class="tour-status">
+            <span class="ticket-avail ticket-sold">Sold Out</span>
+            <button class="btn btn-tickets" disabled>Sold Out</button>
+          </div>
+        </div>
+
+        <div class="tour-item reveal">
+          <div class="tour-date">
+            <span class="tour-day">06</span>
+            <span class="tour-month">SEP</span>
+          </div>
+          <div class="tour-details">
+            <h3 class="tour-venue">YES Manchester</h3>
+            <p class="tour-location"><i class="fas fa-location-dot"></i> Manchester, UK</p>
+          </div>
+          <div class="tour-status">
+            <span class="ticket-avail">Tickets Available</span>
+            <a href="https://linktr.ee/ayocloudi" target="_blank" rel="noopener noreferrer" class="btn btn-tickets">Buy Tickets</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="tour-more reveal">
+        <a href="https://linktr.ee/ayocloudi" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+          View All Tour Dates <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEWS SECTION ===== -->
+  <section class="section section-alt" id="news">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow reveal">Updates</span>
+        <h2 class="section-title reveal">News &amp; Blog</h2>
+        <p class="section-desc reveal">Stay in the loop with the latest from AyoCloudi.</p>
+      </div>
+
+      <div class="news-grid">
+        <article class="news-card news-card-featured reveal">
+          <div class="news-card-img news-img-1"></div>
+          <div class="news-card-body">
+            <span class="news-tag">New Release</span>
+            <h3 class="news-card-title">"Cloud Nine" Is Out Now — Here's What Inspired It</h3>
+            <p class="news-card-excerpt">AyoCloudi opens up about the creative process behind the latest single, exploring themes of escapism and identity through a lens of dreamy sound design.</p>
+            <div class="news-card-meta">
+              <span><i class="fas fa-calendar"></i> March 15, 2024</span>
+              <a href="#news" class="link-accent">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <div class="news-side">
+          <article class="news-card news-card-small reveal">
+            <div class="news-card-img-small news-img-2"></div>
+            <div class="news-card-body">
+              <span class="news-tag">Tour</span>
+              <h3 class="news-card-title-small">Summer 2024 UK Tour Announced</h3>
+              <p class="news-card-date"><i class="fas fa-calendar"></i> February 28, 2024</p>
+            </div>
+          </article>
+
+          <article class="news-card news-card-small reveal">
+            <div class="news-card-img-small news-img-3"></div>
+            <div class="news-card-body">
+              <span class="news-tag">Press</span>
+              <h3 class="news-card-title-small">AyoCloudi Featured in NME's "Artists to Watch 2024"</h3>
+              <p class="news-card-date"><i class="fas fa-calendar"></i> January 10, 2024</p>
+            </div>
+          </article>
+
+          <article class="news-card news-card-small reveal">
+            <div class="news-card-img-small news-img-4"></div>
+            <div class="news-card-body">
+              <span class="news-tag">Merch</span>
+              <h3 class="news-card-title-small">Midnight Static Hoodie — Limited Drop This Friday</h3>
+              <p class="news-card-date"><i class="fas fa-calendar"></i> December 5, 2023</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow reveal">Get In Touch</span>
+        <h2 class="section-title reveal">Contact &amp; Connect</h2>
+        <p class="section-desc reveal">For bookings, press, or just to say hey — slide in.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Form -->
+        <div class="contact-form-wrap reveal">
+          <h3 class="contact-subtitle">Send a Message</h3>
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contactName">Name *</label>
+                <input type="text" id="contactName" name="name" placeholder="Your name" required />
+              </div>
+              <div class="form-group">
+                <label for="contactEmail">Email *</label>
+                <input type="email" id="contactEmail" name="email" placeholder="your@email.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contactSubject">Subject</label>
+              <select id="contactSubject" name="subject">
+                <option value="">Select a subject</option>
+                <option value="booking">Booking / Shows</option>
+                <option value="press">Press / Media</option>
+                <option value="collab">Collaboration</option>
+                <option value="merch">Merch / Orders</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="contactMessage">Message *</label>
+              <textarea id="contactMessage" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              Send Message <i class="fas fa-paper-plane"></i>
+            </button>
+            <div class="form-success" id="formSuccess">
+              <i class="fas fa-circle-check"></i> Message sent! I'll get back to you soon.
+            </div>
+          </form>
+        </div>
+
+        <!-- Right Column -->
+        <div class="contact-side">
+          <!-- Newsletter -->
+          <div class="newsletter-box reveal">
+            <div class="newsletter-icon"><i class="fas fa-envelope-open-text"></i></div>
+            <h3 class="contact-subtitle">Join the Cloud</h3>
+            <p>Be the first to hear about new music, merch drops, and tour announcements.</p>
+            <form class="newsletter-form" id="newsletterForm" novalidate>
+              <div class="newsletter-input-wrap">
+                <input type="email" id="newsletterEmail" name="email" placeholder="Enter your email" required aria-label="Email address for newsletter" />
+                <button type="submit" class="btn btn-primary" aria-label="Subscribe to newsletter">
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+              <div class="form-success" id="newsletterSuccess">
+                <i class="fas fa-circle-check"></i> You're in! Welcome to the cloud.
+              </div>
+            </form>
+            <p class="newsletter-note">No spam, ever. Unsubscribe at any time.</p>
+          </div>
+
+          <!-- Social Links -->
+          <div class="social-box reveal">
+            <h3 class="contact-subtitle">Follow AyoCloudi</h3>
+            <div class="social-links">
+              <a href="https://www.instagram.com/ayocloudi" target="_blank" rel="noopener noreferrer" class="social-link social-instagram" aria-label="AyoCloudi on Instagram">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+                <i class="fas fa-arrow-up-right-from-square social-ext"></i>
+              </a>
+              <a href="https://www.tiktok.com/@ayocloudi" target="_blank" rel="noopener noreferrer" class="social-link social-tiktok" aria-label="AyoCloudi on TikTok">
+                <i class="fab fa-tiktok"></i>
+                <span>TikTok</span>
+                <i class="fas fa-arrow-up-right-from-square social-ext"></i>
+              </a>
+              <a href="https://open.spotify.com/artist/6eUKZXaKkcviH0Ku9w2n3V" target="_blank" rel="noopener noreferrer" class="social-link social-spotify" aria-label="AyoCloudi on Spotify">
+                <i class="fab fa-spotify"></i>
+                <span>Spotify</span>
+                <i class="fas fa-arrow-up-right-from-square social-ext"></i>
+              </a>
+              <a href="https://youtube.com/@ayocloudi" target="_blank" rel="noopener noreferrer" class="social-link social-youtube" aria-label="AyoCloudi on YouTube">
+                <i class="fab fa-youtube"></i>
+                <span>YouTube</span>
+                <i class="fas fa-arrow-up-right-from-square social-ext"></i>
+              </a>
+              <a href="https://linktr.ee/ayocloudi" target="_blank" rel="noopener noreferrer" class="social-link social-linktree" aria-label="AyoCloudi on Linktree">
+                <i class="fas fa-tree"></i>
+                <span>Linktree</span>
+                <i class="fas fa-arrow-up-right-from-square social-ext"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo">AyoCloudi</a>
+          <p class="footer-tagline">Ayomide Ogun-Ajala<br />Genre-defying. Unapologetic. Cloudi.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/ayocloudi" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@ayocloudi" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://open.spotify.com/artist/6eUKZXaKkcviH0Ku9w2n3V" target="_blank" rel="noopener noreferrer" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
+            <a href="https://youtube.com/@ayocloudi" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://linktr.ee/ayocloudi" target="_blank" rel="noopener noreferrer" aria-label="Linktree"><i class="fas fa-tree"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-nav">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#music">Music</a></li>
+            <li><a href="#merch">Merch</a></li>
+            <li><a href="#tour">Tour</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav">
+          <h4>Music</h4>
+          <ul>
+            <li><a href="https://open.spotify.com/artist/6eUKZXaKkcviH0Ku9w2n3V" target="_blank" rel="noopener noreferrer">Spotify</a></li>
+            <li><a href="https://music.apple.com" target="_blank" rel="noopener noreferrer">Apple Music</a></li>
+            <li><a href="https://youtube.com/@ayocloudi" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav">
+          <h4>Links</h4>
+          <ul>
+            <li><a href="https://linktr.ee/ayocloudi" target="_blank" rel="noopener noreferrer">Linktree</a></li>
+            <li><a href="#merch">Official Store</a></li>
+            <li><a href="#contact">Bookings</a></li>
+            <li><a href="#contact">Press</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> AyoCloudi (Ayomide Ogun-Ajala). All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#privacy">Privacy Policy</a>
+          <a href="#terms">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
