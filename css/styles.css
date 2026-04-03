@@ -1059,7 +1059,7 @@ input, textarea, select {
   color: var(--accent);
 }
 
-.merch-card:has(.merch-card-badge:contains("SOLD OUT")) .merch-card-badge {
+.merch-card-badge.badge-sold-out {
   background: rgba(255, 45, 120, 0.15);
   border-color: rgba(255, 45, 120, 0.3);
   color: var(--neon-pink);

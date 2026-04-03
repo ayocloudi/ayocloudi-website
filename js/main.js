@@ -77,7 +77,7 @@
   if (!revealEls.length) return;
 
   const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry, i) => {
+    entries.forEach((entry) => {
       if (entry.isIntersecting) {
         // Stagger children in the same parent
         const siblings = Array.from(entry.target.parentElement.querySelectorAll('.reveal:not(.visible)'));
@@ -193,7 +193,7 @@
     // Purely visual – no actual audio
     const vol = volumeSlider.value;
     const volIcon = volumeSlider.previousElementSibling;
-    if (vol == 0) {
+    if (vol === '0') {
       volIcon.className = 'fas fa-volume-xmark';
     } else if (vol < 50) {
       volIcon.className = 'fas fa-volume-low';
